@@ -1,8 +1,8 @@
+<img align="right" width="300" src="http://coderdojoscotland.com/balloon.png" />
+
 # Coderdojo Scotland HTML/CSS Cake
 
-**Happy 5th Birthday - Coderdojo Scotland**
-
-![5 Binary Balloon](http://coderdojoscotland.com/balloon.png)
+#### Happy 0101 Birthday - Coderdojo Scotland!
 
 ## Getting Started
 
@@ -17,6 +17,8 @@ Download or Fork our Github repository - [https://github.com/CoderDojoScotland/b
 This simple repository contains HTML and CSS to render a birthday cake, celebrating Coderdojo Scotland's 5th Birthday.
 
 The cake is styled entirely with CSS, using standard properties (like `background` and `border-radius`) as well as more modern properties (such as `animation` and `justify-content`).
+
+<br clear="both" />
 
 ## Editing
 
