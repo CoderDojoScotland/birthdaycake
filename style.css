@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 /* HTML Reset / Alignment */
 
 html, body {
@@ -7,6 +9,7 @@ html, body {
 
 body {
     background: #0086ff;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -16,16 +19,23 @@ body {
 
 /*Uncomment the rule below to show a border around all of the div elements*/
 
-/*.cake, .sponge, .candle, .icing, .icing:after, .flame, .wick, .wax {
+/*
+* {
     border: 1px solid black;
     box-sizing: border-box;
-}*/
+}
+*/
 
 /* Sizing */
 
-.cake {
+.container {
     width: 600px;
-    max-width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.cake {
+    margin-bottom: 100px;
     height: 550px;
     max-height: 100%;
 }
@@ -61,6 +71,16 @@ body {
 }
 
 /* Styling */
+
+.balloon {
+    align-self: flex-start;
+    width: 300px;
+    max-width: 100%;
+}
+.balloon > img {
+    display: block;
+    max-width: 100%;
+}
 
 .sponge {
     position: relative;

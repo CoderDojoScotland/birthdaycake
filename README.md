@@ -1,6 +1,8 @@
 # Coderdojo Scotland HTML/CSS Cake
 
-## Happy 5th Birthday - Coderdojo Scotland
+**Happy 5th Birthday - Coderdojo Scotland**
+
+![5 Binary Balloon](http://coderdojoscotland.com/balloon.png)
 
 ## Getting Started
 
