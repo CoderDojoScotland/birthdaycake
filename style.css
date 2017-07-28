@@ -1,0 +1,157 @@
+/* HTML Reset / Alignment */
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #0086ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Uncomment the rule below to show a border around all of the div elements*/
+
+/*.cake, .sponge, .candle, .icing, .icing:after, .flame, .wick, .wax {
+    border: 1px solid black;
+    box-sizing: border-box;
+}*/
+
+/* Sizing */
+
+.cake {
+    width: 600px;
+    max-width: 100%;
+    height: 550px;
+    max-height: 100%;
+}
+
+.sponge {
+    width: 98%;
+    height: 45%;
+}
+
+.icing {
+    height: 15%;
+}
+
+.candle {
+    width: 5%;
+    height: 40%;
+}
+
+.candle > .flame {
+    width: 60%;
+    margin-top: 30%;
+    height: 25%;
+}
+
+.candle > .wick {
+    width: 5%;
+    height: 5%;
+}
+
+.candle > .wax {
+    width: 100%;
+    height: 70%;
+}
+
+/* Styling */
+
+.sponge {
+    position: relative;
+    margin: 0 auto;
+    background: #ffd878;
+    border-radius: 0 0 30px 30px;
+}
+
+.filling {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: 40%;
+    left: 0;
+    border-top: 22px solid #ea5774;
+    border-bottom: 20px solid #fff;
+}
+
+.icing {
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+.icing:after {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#fff 70%, transparent 50%);
+    background-repeat: repeat-x;
+    background-size: 14.4% 100%;
+}
+
+.candle {
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.candle > .flame {
+    margin: 0 auto;
+    background-image: radial-gradient(circle, #ea5774, #ffd45c);
+    border-radius: 8px 8px 8px 8px / 20px 20px 8px 8px;
+	animation:
+		candle-wind 5s ease-in-out infinite,
+		candle-size 10s ease-in-out infinite,
+		candle-flickr 5s ease-in-out infinite;
+	transform-origin: 50% 100%;
+}
+
+.candle > .wick {
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 2px 2px 0 0;
+}
+
+.candle > .wax {
+    background: #64c8ff;
+    border: 1px solid #0074b3;
+    border-radius: 10px 10px 0 0;
+}
+
+/* CSS Animation */
+
+@keyframes candle-wind {
+	0%, 22%, 49%, 62%, 81%, 100% {
+		border-radius: 2px 14px 8px 8px / 20px 20px 8px 8px;
+	}
+	14%, 32%, 56%, 70%, 89% {
+		border-radius: 14px 2px 8px 8px / 20px 20px 8px 8px;
+	}
+}
+
+@keyframes candle-size {
+	0%, 22%, 49%, 62%, 81%, 100% {
+		transform: scale(1,1);
+	}
+	14%, 32%, 56%, 70%, 89% {
+		transform: scale(0.9, 1.2);
+	}
+}
+
+@keyframes candle-flickr {
+	0%, 22%, 49%, 62%, 81%, 100% {
+		box-shadow: 0 0 20px 0 rgba(255,202,0,0.7);
+	}
+	14%, 32%, 56%, 70%, 89% {
+		box-shadow: 0 0 20px 0 rgba(255,202,0,.8);
+	}
+}
